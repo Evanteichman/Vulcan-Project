@@ -1,0 +1,19 @@
+html {
+    // height: 100vh;
+    // width: 100%;
+    // overflow: hidden;
+}
+
+@media (min-width: $breakpoint-tablet){
+.map-contact-flex {
+    display: flex;
+    // height:35rem;
+}
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .map-contact-flex {
+        z-index: 0;
+        // padding-bottom: 2rem;
+    }
+}

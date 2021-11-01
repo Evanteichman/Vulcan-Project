@@ -1,0 +1,98 @@
+.about-banner-section {
+    position: relative;
+    height: 34rem;
+  
+}
+
+.about-img-underlay img{
+    position: absolute;
+    height: 100%;
+    // width: 200%;
+    top: 0;
+    left: 0;
+    
+    // width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    // width
+    // opacity: 50%;
+    
+}
+
+.about-info {
+    position: absolute;
+    color: white;
+    text-align: center;
+    // font-size: large; //make font size and h3 size a variable? 
+    font-family:  $main-font;
+    z-index: 2;  
+    min-width: 100%;
+}
+
+.about-info h2 {
+    font-size: 30px;
+    margin: 20% 1% 0 0;
+    padding: 0 20%;
+
+}
+
+.about-info p{
+ margin: 1.5rem 20% 0  ;   
+//   margin-top: -1rem;
+}
+
+.about-button {
+    background: transparent;
+    border: solid 1px white;
+    color: white;
+    padding: .75rem 2rem;
+    font-weight: bolder;
+    margin-top: 3rem;
+
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+    .about-banner-section {
+        height: 30rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-img-underlay img {
+        min-width: 100%;
+    }
+
+    .about-info {
+        // margin: 0 30%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-info h2 {
+        margin-top: 6rem;
+        font-size: 2.25rem;
+    }
+
+    .about-info button {
+        margin-top: 5rem;
+        padding: .5rem 1rem;
+    }
+
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .about-info h2{
+        padding: 0 20%;
+        font-size: 3rem;
+    }
+
+    .about-info p {
+        padding:  2% 5%;
+    }
+
+    .about-info button {
+        padding: .5rem 2.5rem;
+        margin-top: 2rem;
+    }
+}

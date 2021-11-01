@@ -1,0 +1,108 @@
+// Section Title and Text
+.customized-header {
+    text-align: center;
+    margin: 1.5rem 0rem;
+    h2 {
+        font-family: $main-font;
+        color: $subFontOne-color;
+        text-transform: uppercase;
+        margin: .5rem;
+    }
+        p {
+            font-family: $secondary-font;
+            margin: 0rem 1.5rem;
+            line-height: 1rem;
+        }
+}
+
+// Images Section
+.image-section {
+//General Styles
+    h3 {
+        font-family: $main-font;
+        color: $subFontOne-color;
+        text-transform: uppercase;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    hr {
+        border: .1px solid rgb(202, 197, 197);
+        background-color:  rgb(202, 197, 197);
+        margin: 0 .75rem;
+    }
+
+    a {
+        font-family: $secondary-font;
+        color: $subFontOne-color;
+        display: none;
+    }
+
+    margin: 0rem 1rem;
+    padding: 2rem 0rem;
+
+    // Styling for machines 01,02,03,04
+        .machine01,
+        .machine02,
+        .machine03,
+        .machine04 {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.5rem 0rem;
+        }
+        
+        h3 {
+            padding: .1rem 1rem;
+            margin: 0 .5rem
+        }
+
+       
+}
+
+// Tablet styling
+@media screen and (min-width: $breakpoint-tablet) {
+    // Section title & text
+    .customized-header {
+        h2 {
+            color: $main-color
+        }
+
+        br {
+            display: none;
+        }
+    }
+
+    // Images section
+    .image-section  {
+        h3 {
+            color: $secondary-color;
+        }
+
+        a {
+            display: block;
+        }
+
+        hr {
+            display: none;
+        }
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+
+        .machine01,
+        .machine02,
+        .machine03,
+        .machine04 {
+           display: block;
+           text-align: center;
+           margin: .5rem 1rem;
+        }    
+    }
+
+ }

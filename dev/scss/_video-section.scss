@@ -1,0 +1,55 @@
+
+.video-section {
+    padding: 5%;
+    background-color: #429bd6;
+}
+
+.video-container {
+    border: 1rem solid $main-color;
+    position: relative;
+    margin: 15%;
+    overflow: hidden;
+    padding: 0 1%;    
+    background-color: $video-border-color;
+    
+
+}
+
+.video-container .video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    padding: 0 1rem;
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+   .video-container {
+       margin: 5%;
+       padding: .5% 0;
+   }
+
+   .video-container video {
+       padding: 1rem 0;
+       left: 1rem;
+   }
+
+}
+
+@media (min-width: $breakpoint-desktop) {
+
+    .video-container {
+        margin: -1% 15%;
+        padding: .5% 0;
+    }
+ 
+    .video-container video {
+        padding: 1rem 0;
+        left: 1rem;
+    }
+ 
+
+ }
+

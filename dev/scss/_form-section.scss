@@ -1,0 +1,158 @@
+.form-section {
+
+    // wave image
+    img {
+        display: block;
+    }
+
+    .form {
+        background-color: $main-color;
+
+        // Heading and subheading for form
+        h2,
+        p {
+            color: white;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        h2 {
+            font-family: $main-font;
+            text-transform: uppercase;
+            padding-top: 1rem;
+            margin-top: 0;
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-size: .8rem;
+
+        }
+
+        hr {
+            border: .1px solid #eaeff1;
+            background-color:  #eaeff1;
+            margin: 0rem 1rem;
+        }
+
+
+        // Form Styling
+        form {
+            color: white;
+
+            .form-group.select-type {
+                margin: 1rem;
+            }
+
+            label {
+                font-family: $main-font;
+                font-weight: 700;
+                font-size: .9rem;
+            }
+
+            select {
+                font-family: $secondary-font;
+                font-size: .8rem;
+                color: $subFontOne-color;
+                background-color: $form-color;
+                border: none;
+                width: 100%;
+                padding: .75rem .2rem;
+                margin: .5rem 0rem;
+                margin-bottom: 1rem;
+            }
+
+            #product-type {
+                background-color: #eaeff1;
+            }
+
+            .form-row.submit {
+                display: block;
+                display: flex;
+                justify-content: center;
+            }
+
+            .form-group.submit-group {
+                padding: 1rem;
+            }
+        
+            input {
+                font-family: $secondary-font;
+                text-transform: uppercase;
+                color: white;
+                background-color: $secondary-color;
+                border: none;
+                width: 100%;
+                padding: .6rem 1.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+// // Tablet styling
+@media screen and (min-width: $breakpoint-tablet) {
+    .form-section {
+
+        .form {
+            //Form Heading and Subheading
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                color: $secondary-color;
+                font-size: 1.2rem;
+            }
+
+            hr {
+                margin: 0rem 2rem;
+            }
+
+            //Form <select> styling
+            form {
+
+                .form-group.select-type {
+                    display: flex;
+                    align-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .form-row {
+                    margin: 1rem;
+                    width: 45%;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .form-section {
+
+        .form {
+            //Form Heading and Subheading
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                color: $secondary-color;
+                font-size: 1.5rem;
+            }
+
+            //Form <select> styling
+            form {
+                
+                .form-group.select-type {
+                    display: flex;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+
+                }   
+            }
+        }
+    }
+}
+

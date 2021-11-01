@@ -1,0 +1,94 @@
+.map-underlay {
+    height: 20rem;
+    width: 100%;
+  
+}
+
+.map-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ 
+}
+
+.map-section{
+    font-family: $main-font;
+    position: relative;
+   z-index: 0;
+//  width: 50%;
+}
+
+.map-text-button {
+position: absolute;
+text-align: center;
+top: 25.5%;
+left: 15%;
+right: 15%;
+bottom: 25%;
+ z-index: 1;
+
+ color: $subFontThree-color;
+}
+
+.map-text-button h3 {
+    font-size: 1.75rem;    
+    // font-weight: 400;
+}
+
+.map-section button {
+    background: transparent;
+    border: solid .5px $subFontThree-color;
+    padding: .75rem .5rem;
+    // width: 13rem;
+    font-size: 1rem;
+    font-family: $secondary-font;
+    font-weight: 500;
+    margin-top: -3rem;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .map-section {
+        // float: right;
+        width: 55%;
+        order: 2;
+        min-height: 100%;
+    }
+
+    .map-section img {
+        min-height: 170%;
+        width: 100%;
+    }
+
+    .map-text-button h3 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .map-section button {
+        color: white;
+        background-color: $footer-color;
+        border: none;
+        padding: 15px;
+        margin-top: -1.5rem;
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .map-section img {
+    //    min-height: 200%;
+    //    min-width: 100%;
+    }
+    .map-underlay {
+        // min-width: 100%;
+        // min-height: 100%;
+    }
+
+    .map-section {
+        // float: right;
+        // width: 50%;
+        order: 2;
+    }
+}
